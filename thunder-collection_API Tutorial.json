@@ -1,0 +1,113 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "API Tutorial",
+    "collectionId": "58e2439b-c75b-4b40-930e-077669f6d52e",
+    "dateExported": "2025-05-29T07:25:34.716Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "d1c3954b-c1c5-4bfa-be3d-491fdeeceb64",
+            "colId": "58e2439b-c75b-4b40-930e-077669f6d52e",
+            "containerId": "",
+            "name": "http://127.0.0.1:3500/tasks/create",
+            "url": "http://127.0.0.1:3500/tasks/create",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-05-29T07:24:41.851Z",
+            "modified": "2025-05-29T07:24:41.851Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"title\": \"New Task 3\",\r\n  \"description\": \"This is the 3rd task description\",\r\n  \"status\": \"completed\"\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "b97b2f48-0db4-4480-9105-e37f05012aa1",
+            "colId": "58e2439b-c75b-4b40-930e-077669f6d52e",
+            "containerId": "",
+            "name": "http://127.0.0.1:3500/tasks/get-all",
+            "url": "http://127.0.0.1:3500/tasks/get-all",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2025-05-29T07:24:58.268Z",
+            "modified": "2025-05-29T07:24:58.268Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "79e56cba-605e-4cce-8ee0-fba85219d28d",
+            "colId": "58e2439b-c75b-4b40-930e-077669f6d52e",
+            "containerId": "",
+            "name": "http://127.0.0.1:3500/tasks/update/:id",
+            "url": "http://127.0.0.1:3500/tasks/update/68380a0c8fe67b7bd436a528",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2025-05-29T07:25:04.273Z",
+            "modified": "2025-05-29T07:25:04.273Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Updated 3rd Task\",\n  \"description\": \"Updated 3rd Task description\",\n  \"status\": \"in-progress\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "b1f9bc6b-1bb5-43c1-8cef-56b92ea2ed1c",
+            "colId": "58e2439b-c75b-4b40-930e-077669f6d52e",
+            "containerId": "",
+            "name": "http://127.0.0.1:3500/tasks/delete/:id",
+            "url": "http://127.0.0.1:3500/tasks/delete/68380a0c8fe67b7bd436a528",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2025-05-29T07:25:10.424Z",
+            "modified": "2025-05-29T07:25:10.424Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        }
+    ],
+    "ref": "-kpnX3raCpW02fFUnE6fOqqnIEZm8pP2Wsc2P2sas7JX3CqWyJTdWW9DaapqopfCh5WWLPYpn8d18Ef5KENWFw"
+}

@@ -6,20 +6,34 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const connectDB = require('./config/dbConn');
 
+const taskRoutes = require('./routes/taskRoutes');
+
 const app = express();
 const PORT = process.env.PORT || 3500;
+
+const allowedOrigins = [
+    process.env.BASE_URL,
+    process.env.FRONTEND_URL
+].filter(Boolean);
 
 
 connectDB();
 
 app.use(cors({
-    origin: process.env.FRONTEND_URL, // Ensure this matches your client URL
-    credentials: true, // Allow cookies to be sent and received
-})); 
+    origin: allowedOrigins,
+    credentials: true // So Cookies pass through 
+}));
 
 app.use(express.json());
 app.use(cookieParser());
 
+
+// to show a test message at http://127.0.0.1:3500/test
+app.get('/test', (req, res) => {
+    res.send("This is a test");
+});
+
+app.use('/tasks', taskRoutes);
 
 
 mongoose.connection.once('open', () => {
