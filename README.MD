@@ -30,7 +30,7 @@ Welcome to the notes for my awesome app project! Below are the steps to set up a
 
 - **Install essential packages** for the app:
   ```bash
-  npm install dotenv express cookie-parser cors mongoose
+  npm install dotenv express cookie-parser cors mongoose jsonwebtoken bcrypt
   ```
   > Here's what each package does:
   - `dotenv`: Loads environment variables from a `.env` file 🌍
